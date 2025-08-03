@@ -8,6 +8,7 @@
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&duration=3000&pause=1000&color=00FFE4&center=true&vCenter=true&width=600&lines=🎯+Explore+Image+and+Video+Intelligence;🎨+Draw%2C+Blur%2C+Threshold%2C+Detect;🧪+Pixel+Experiments+with+a+Touch+of+Code;🚀+Push+Real-Time+Frame+Manipulation" alt="Typing Animation" />
 </p>
 
+
 ---
 
 ## 🚀 Overview
