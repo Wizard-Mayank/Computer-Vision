@@ -1,9 +1,5 @@
 import cv2 as cv
 
-# Selecting and viewing Image
-# myImg = cv.imread("Computer_Vision\Assets\Images\Mayank.jpg")
-# cv.imshow("Myself", myImg)
-
 # Selecting the video
 capture = cv.VideoCapture("E:\Python Projects\Computer_Vision\Assets\Videos\Doggy.mp4")
 
@@ -35,5 +31,3 @@ while True:
 # Releasing pointer and closing all windows  
 capture.release()
 cv.destroyAllWindows()
-
-# cv.waitKey(0)
