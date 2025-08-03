@@ -1,11 +1,11 @@
 import cv2 as cv
 
 # Selecting and viewing Image
-# myImg = cv.imread("Computer_Vision\Images\Mayank.jpg")
+# myImg = cv.imread("Computer_Vision\Assets\Images\Mayank.jpg")
 # cv.imshow("Myself", myImg)
 
 # Selecting the video
-capture = cv.VideoCapture("Computer_Vision\Videos\Doggy.mp4")
+capture = cv.VideoCapture("E:\Python Projects\Computer_Vision\Assets\Videos\Doggy.mp4")
 
 # Resizing the frame
 def resizeFrame(frame, scale=0.75):

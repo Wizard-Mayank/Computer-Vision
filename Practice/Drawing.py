@@ -19,7 +19,7 @@ blank = np.zeros((500, 500, 3), dtype='uint8')
 # cv.imshow("Circle", blank)
 
 # draw a line
-cv.line(blank, (250, 10), (250, 250), (0, 0, 255), 4)
-cv.imshow("Line", blank)
+# cv.line(blank, (250, 10), (250, 250), (0, 0, 255), 4)
+# cv.imshow("Line", blank)
 
 cv.waitKey(0)
