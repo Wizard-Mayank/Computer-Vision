@@ -23,7 +23,7 @@ def translate(img, x, y):
 
 # to rotate image -angle = clockwise +angle = counter-clockwise
 def rotate(img, angle, rotPoint=None):
-    (width, height) = img.shape[:2]
+    (height, width) = img.shape[:2]
 
     if rotPoint == None:
         rotPoint = (width // 2, height // 2)
