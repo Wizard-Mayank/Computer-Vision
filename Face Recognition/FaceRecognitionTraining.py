@@ -15,7 +15,7 @@ DIR = r"F:\Face Recognition\training data"
 
 # load the haar cascade classifier
 classifier = cv.CascadeClassifier(
-    "E:\Python Projects\Computer_Vision\Face Detection and Recognition\haar_face.xml"
+    "E:\Python Projects\Computer_Vision\Face Detection\haar_face.xml"
 )
 
 # mapped data will be stored on these lists for the model to train
@@ -45,9 +45,9 @@ def train_model():
                     y : y + h, x : x + w
                 ]  # person's region of interest through cropping
 
-                cv.imshow("Region of interest", face_roi)
+                # cv.imshow("Region of interest", face_roi)
 
-                cv.waitKey(0)
+                # cv.waitKey(0)
 
                 features.append(face_roi)  # store person's face matrix
                 labels.append(label)  # store person's face label
@@ -55,6 +55,18 @@ def train_model():
 
 train_model()  # start training
 
+print("----------------   Model trained!   ----------------")
+
 # length of data
-print(f"Length of features : {len(features)}.")
-print(f"Length of labels : {len(labels)}.")
+# print(f"Length of features : {len(features)}.")
+# print(f"Length of labels : {len(labels)}.")
+
+features = np.array(features, dtype="object")
+labels = np.array(labels)
+
+face_recognizer = cv.face.LBPHFaceRecognizer_create()
+face_recognizer.train(features, labels)
+
+face_recognizer.save("face_trained.yml")
+np.save("features.npy", features)
+np.save("labels.npy", labels)
