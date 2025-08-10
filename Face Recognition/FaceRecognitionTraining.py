@@ -42,7 +42,7 @@ def train_model():
 
             for x, y, w, h in faces_rect:
                 face_roi = gray_img[
-                    x : x + w, y : y + h
+                    y : y + h, x : x + w
                 ]  # person's region of interest through cropping
 
                 cv.imshow("Region of interest", face_roi)
